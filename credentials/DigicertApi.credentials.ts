@@ -12,6 +12,8 @@ export class DigicertApi implements ICredentialType {
 
 	documentationUrl = 'https://dev.digicert.com/certcentral-apis/services-api/';
 
+	icon = { light: 'file:digicert.svg', dark: 'file:digicert.dark.svg' };
+
 	properties: INodeProperties[] = [
 		{
 			displayName: 'API Key',

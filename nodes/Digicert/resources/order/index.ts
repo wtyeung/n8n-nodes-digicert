@@ -212,6 +212,9 @@ export const orderDescription: INodeProperties[] = [
 				displayName: 'Limit',
 				name: 'limit',
 				type: 'number',
+				typeOptions: {
+					minValue: 1,
+				},
 				default: 50,
 				description: 'Max number of results to return',
 				routing: {
@@ -247,7 +250,7 @@ export const orderDescription: INodeProperties[] = [
 					{ name: 'Cancelled', value: 'cancelled' },
 					{ name: 'Expired', value: 'expired' },
 				],
-				default: '',
+				default: 'pending',
 				description: 'Filter by order status',
 				routing: {
 					send: {
